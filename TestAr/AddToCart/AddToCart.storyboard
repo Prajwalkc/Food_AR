@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Add To Cart View Controller-->
+        <scene sceneID="zbM-jc-3u4">
+            <objects>
+                <viewController storyboardIdentifier="AddToCartViewController" modalTransitionStyle="crossDissolve" modalPresentationStyle="overCurrentContext" id="BPV-sb-zle" customClass="AddToCartViewController" customModule="TestAr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1D0-Xe-0BE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2X4-dD-E94">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="398"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cW3-De-Ojm" customClass="MDCTextField" customModule="TestAr" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="53" width="195" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="195" id="tOQ-J1-vBn"/>
+                                        </constraints>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZIf-WH-9ZM" customClass="MDCTextField" customModule="TestAr" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="91" width="195" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bEV-Ep-DM7" customClass="MDCTextField" customModule="TestAr" customModuleProvider="target">
+                                        <rect key="frame" x="90" y="184" width="195" height="30"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="bEV-Ep-DM7" firstAttribute="top" secondItem="ZIf-WH-9ZM" secondAttribute="bottom" constant="63" id="3sY-Gc-ahM"/>
+                                    <constraint firstItem="cW3-De-Ojm" firstAttribute="top" secondItem="2X4-dD-E94" secondAttribute="top" constant="53" id="642-5Q-Kfg"/>
+                                    <constraint firstItem="ZIf-WH-9ZM" firstAttribute="width" secondItem="cW3-De-Ojm" secondAttribute="width" id="7BJ-Fq-3K3"/>
+                                    <constraint firstItem="bEV-Ep-DM7" firstAttribute="centerX" secondItem="2X4-dD-E94" secondAttribute="centerX" id="Xzj-HP-n1u"/>
+                                    <constraint firstItem="ZIf-WH-9ZM" firstAttribute="centerX" secondItem="2X4-dD-E94" secondAttribute="centerX" id="iEA-T7-kQo"/>
+                                    <constraint firstItem="bEV-Ep-DM7" firstAttribute="width" secondItem="ZIf-WH-9ZM" secondAttribute="width" id="rfi-pu-ZOV"/>
+                                    <constraint firstItem="cW3-De-Ojm" firstAttribute="centerX" secondItem="2X4-dD-E94" secondAttribute="centerX" id="tba-sy-YtX"/>
+                                    <constraint firstItem="ZIf-WH-9ZM" firstAttribute="top" secondItem="cW3-De-Ojm" secondAttribute="bottom" constant="8" id="wf6-F5-vro"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2X4-dD-E94" firstAttribute="trailing" secondItem="tkO-QN-m2x" secondAttribute="trailing" id="2hr-5R-1pJ"/>
+                            <constraint firstItem="tkO-QN-m2x" firstAttribute="bottom" secondItem="2X4-dD-E94" secondAttribute="bottom" constant="269" id="FQS-1e-UHJ"/>
+                            <constraint firstItem="2X4-dD-E94" firstAttribute="leading" secondItem="tkO-QN-m2x" secondAttribute="leading" id="Pej-WF-Hd2"/>
+                            <constraint firstItem="2X4-dD-E94" firstAttribute="top" secondItem="1D0-Xe-0BE" secondAttribute="top" id="Vi5-Pk-0FA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="tkO-QN-m2x"/>
+                    </view>
+                    <connections>
+                        <outlet property="addToCartView" destination="2X4-dD-E94" id="kNQ-aa-yRd"/>
+                        <outlet property="itemNameTxtField" destination="cW3-De-Ojm" id="5FV-rO-rMB"/>
+                        <outlet property="itemNumberTxtField" destination="ZIf-WH-9ZM" id="Wey-pg-2K1"/>
+                        <outlet property="itemTotal" destination="bEV-Ep-DM7" id="v82-uh-UDS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YtO-77-zof" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="48.799999999999997" y="73.313343328335833"/>
+        </scene>
+    </scenes>
+</document>

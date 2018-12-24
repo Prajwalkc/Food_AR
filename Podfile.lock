@@ -1,0 +1,34 @@
+PODS:
+  - Cosmos (17.0.0)
+  - Realm (3.12.0):
+    - Realm/Headers (= 3.12.0)
+  - Realm/Headers (3.12.0)
+  - RealmSwift (3.12.0):
+    - Realm (= 3.12.0)
+  - SSZipArchive (2.1.4)
+  - Toast-Swift (4.0.1)
+
+DEPENDENCIES:
+  - Cosmos (~> 17.0)
+  - RealmSwift
+  - SSZipArchive
+  - Toast-Swift (~> 4.0.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Cosmos
+    - Realm
+    - RealmSwift
+    - SSZipArchive
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Cosmos: 309e489f21ffc91a1eeecfebef7f817cd2fcfba6
+  Realm: cdaef23c4ddb36ab1ddffed23f5a7f3332fc5585
+  RealmSwift: 5576324033f0aa5ef1e0a839a3da2281dff47a7f
+  SSZipArchive: 41455d4b8d2b6ab93990820b50dc697c2554a322
+  Toast-Swift: e42a638589a2f95036b4bb7626cfbdde7daf0393
+
+PODFILE CHECKSUM: 47edecee4742378c935933271731b47f7c8c0eb3
+
+COCOAPODS: 1.5.0

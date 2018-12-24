@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HSb-ou-7T5">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--SplashScreen-->
+        <scene sceneID="R60-Pu-Hpy">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController" title="SplashScreen" id="HSb-ou-7T5" customClass="SplashScreenViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y1H-iV-BwG"/>
+                        <viewControllerLayoutGuide type="bottom" id="PYB-Kq-ghm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="9Uc-9s-KgO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="virtual reality food" translatesAutoresizingMaskIntoConstraints="NO" id="t0L-Lq-KkM">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fT-rx-EWW">
+                                <rect key="frame" x="12.5" y="574" width="350" height="73"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="1Vk-Ur-mwJ"/>
+                                    <constraint firstAttribute="width" constant="350" id="Rf3-84-Xnr">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="175"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="Let's GO">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8fT-rx-EWW" firstAttribute="centerX" secondItem="9Uc-9s-KgO" secondAttribute="centerX" id="6Th-i9-mPm"/>
+                            <constraint firstItem="t0L-Lq-KkM" firstAttribute="top" secondItem="y1H-iV-BwG" secondAttribute="bottom" id="9Oa-11-q6j"/>
+                            <constraint firstItem="PYB-Kq-ghm" firstAttribute="top" secondItem="t0L-Lq-KkM" secondAttribute="bottom" id="JWJ-eA-xsE"/>
+                            <constraint firstItem="PYB-Kq-ghm" firstAttribute="top" secondItem="8fT-rx-EWW" secondAttribute="bottom" constant="20" id="PKM-uC-zHo"/>
+                            <constraint firstAttribute="trailing" secondItem="t0L-Lq-KkM" secondAttribute="trailing" id="XqL-yH-CdT"/>
+                            <constraint firstItem="t0L-Lq-KkM" firstAttribute="leading" secondItem="9Uc-9s-KgO" secondAttribute="leading" id="hKK-C9-jq9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8je-5K-XuW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-138" y="257"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="virtual reality food" width="624" height="524"/>
+    </resources>
+    <color key="tintColor" red="0.78177064659999995" green="0.55228364470000002" blue="0.018981300289999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+</document>

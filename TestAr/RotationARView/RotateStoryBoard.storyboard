@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Uxd-lB-eQB">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Ncq-0i-2Qc">
+            <objects>
+                <viewController storyboardIdentifier="ViewController" id="Uxd-lB-eQB" customClass="ViewController" customModule="TestAr" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="GPc-KD-slV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oug-Qi-st5">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </arscnView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LnQ-PG-7mo">
+                                <rect key="frame" x="333" y="328.5" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.98823529409999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="gZg-ew-W6y"/>
+                                    <constraint firstAttribute="height" constant="30" id="uGL-u4-vTb">
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <integer key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </constraint>
+                                </constraints>
+                                <state key="normal" title="Right" image="forward"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="rightRotate:" destination="Uxd-lB-eQB" eventType="touchUpInside" id="apr-1g-4Pf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-Md-xcd">
+                                <rect key="frame" x="12" y="328.5" width="30" height="30"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.98823529409999999" blue="0.94901960780000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="8tv-8v-TYF"/>
+                                    <constraint firstAttribute="height" constant="30" id="Qsk-1x-NkS"/>
+                                </constraints>
+                                <state key="normal" title="Left" image="back"/>
+                                <connections>
+                                    <action selector="leftSideRotate:" destination="Uxd-lB-eQB" eventType="touchUpInside" id="OLt-oJ-9Lb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="oug-Qi-st5" firstAttribute="trailing" secondItem="FXW-w4-Kep" secondAttribute="trailing" id="0QR-jc-jN2"/>
+                            <constraint firstItem="hdY-Md-xcd" firstAttribute="centerY" secondItem="FXW-w4-Kep" secondAttribute="centerY" id="8sf-jc-c5J"/>
+                            <constraint firstItem="LnQ-PG-7mo" firstAttribute="centerY" secondItem="FXW-w4-Kep" secondAttribute="centerY" id="Fgu-VT-86M"/>
+                            <constraint firstItem="oug-Qi-st5" firstAttribute="bottom" secondItem="FXW-w4-Kep" secondAttribute="bottom" id="HUi-6u-eUi"/>
+                            <constraint firstItem="hdY-Md-xcd" firstAttribute="leading" secondItem="oug-Qi-st5" secondAttribute="leading" constant="12" id="IAx-tA-Sz2"/>
+                            <constraint firstItem="oug-Qi-st5" firstAttribute="leading" secondItem="FXW-w4-Kep" secondAttribute="leading" id="V6F-I7-bzN"/>
+                            <constraint firstItem="oug-Qi-st5" firstAttribute="top" secondItem="GPc-KD-slV" secondAttribute="top" id="VND-wI-sZF"/>
+                            <constraint firstItem="FXW-w4-Kep" firstAttribute="trailing" secondItem="LnQ-PG-7mo" secondAttribute="trailing" constant="12" id="bAv-JL-5py"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="FXW-w4-Kep"/>
+                    </view>
+                    <connections>
+                        <outlet property="leftBtn" destination="hdY-Md-xcd" id="g4U-pd-PNe"/>
+                        <outlet property="rightBtn" destination="LnQ-PG-7mo" id="auP-xX-Wrb"/>
+                        <outlet property="sceneView" destination="oug-Qi-st5" id="t9F-Di-YSQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fN9-qc-TrL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="426" y="285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="24" height="24"/>
+        <image name="forward" width="24" height="24"/>
+    </resources>
+</document>
